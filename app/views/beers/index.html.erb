@@ -1,0 +1,13 @@
+
+<h1>Beer.me</h1>
+
+<ul>
+  <% @beers.each do |beer| %>
+    <li>
+      <%= image_tag beer.photo, class: "thumb" %>
+      <%= beer.brewery.name %>
+      <%= beer.abv %>
+      <%= beer.style %>
+    </li>
+  <% end %>
+</ul>
