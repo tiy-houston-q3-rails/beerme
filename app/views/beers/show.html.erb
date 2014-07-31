@@ -1,0 +1,29 @@
+<div class="side-image">
+  <div class="images-wrapper" style="background: url(<%= @beer.photo %>)"></div>
+    <div class="content">
+    <h4>Average Rating: <%= @beer.average_rating %></h4>
+    <h1><%= @beer.name %></h1>
+
+    <p>
+      <strong>Brewery</strong>
+      <%= @beer.brewery.name %>
+    </p>
+
+    <p>
+      <strong>Location</strong>
+      <%= @beer.brewery.location %>
+    </p>
+
+    <p>
+      <strong>ABV</strong>
+      <%= @beer.abv %>
+    </p>
+
+    <p>
+      <strong>Style</strong>
+      <%= @beer.style %>
+    </p>
+
+
+  </div>
+</div>

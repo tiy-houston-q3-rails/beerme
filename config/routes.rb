@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "beers#index"
-  resources :beer
+  resources :beers
 end
