@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scale: 1
+  beer_id: 
+  user_id: 
+  notes: MyText
+
+two:
+  scale: 1
+  beer_id: 
+  user_id: 
+  notes: MyText
