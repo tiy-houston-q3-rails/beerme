@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
+
+gem 'active_model_serializers'
