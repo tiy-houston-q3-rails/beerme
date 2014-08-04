@@ -4,7 +4,7 @@ class BeersController < ApplicationController
 
   respond_to :html, :json
 
-  before_action :authenticate_user!, if: -> {request.format == :json}
+  # before_action :authenticate_user!, if: -> {request.format == :json}
 
   def index
     @beers = Beer.all
