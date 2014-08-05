@@ -1,7 +1,7 @@
-working_directory "/home/deploy/apps/beerme"
-pid "/home/deploy/apps/beerme/tmp/pids/unicorn.pid"
-stderr_path "/home/deploy/apps/beerme/log/unicorn.log"
-stdout_path "/home/deploy/apps/beerme/log/unicorn.log"
+working_directory "/home/deploy/apps/beerme/current"
+pid "/home/deploy/apps/beerme/current/tmp/pids/unicorn.pid"
+stderr_path "/home/deploy/apps/beerme/current/log/unicorn.log"
+stdout_path "/home/deploy/apps/beerme/current/log/unicorn.log"
 
 listen "/tmp/unicorn.shop.sock"
 worker_processes 2
