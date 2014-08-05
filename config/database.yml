@@ -82,4 +82,5 @@ production:
   <<: *default
   database: beerme_production
   username: beerme
-  password: <%= ENV['BEERME_DATABASE_PASSWORD'] %>
+  host: localhost
+  password: beerme100

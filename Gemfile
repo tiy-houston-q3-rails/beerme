@@ -44,6 +44,9 @@ gem 'bitters'
 
 gem 'active_model_serializers'
 
-gem 'capistrano',  '~> 3.1'
-gem 'capistrano-rails', '~> 1.1'
+group :development do
+  gem 'capistrano3-unicorn'
+  gem 'capistrano',  '~> 3.1'
+  gem 'capistrano-rails', '~> 1.1'
+end
 gem 'unicorn'

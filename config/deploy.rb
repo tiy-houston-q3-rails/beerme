@@ -5,7 +5,7 @@ set :application, 'beerme'
 set :repo_url, 'git@github.com:tiy-houston-q3-rails/beerme.git'
 
 # Default branch is :master
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/deploy/apps/beerme'
@@ -55,4 +55,11 @@ namespace :deploy do
     end
   end
 
+end
+
+after 'deploy:publishing', 'deploy:restart'
+namespace :deploy do
+  task :restart do
+    invoke 'unicorn:reload'
+  end
 end
